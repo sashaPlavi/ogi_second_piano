@@ -15,8 +15,7 @@ body {
 .piano-container {
   display: flex;
 }
-.key {
-}
+
 .white {
   width: 7rem;
   height: 28rem;
