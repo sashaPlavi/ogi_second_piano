@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.piano-container {
+  display: flex;
+}
+.key {
+}
+.white {
+  width: 7rem;
+  height: 28rem;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+.white.active {
+  background-color: #ccc;
+}
+.black {
+  width: 4rem;
+  height: 16rem;
+  background-color: #000;
+  border: 1px solid #333;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  z-index: 2;
+}
+.black.active {
+  background-color: #333;
+}
+
+@media (max-width: 800px) {
+  .black {
+    width: 3rem;
+    height: 12rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  .white {
+    width: 6rem;
+    height: 24rem;
+  }
+}
+@media (max-width: 670px) {
+  .black {
+    width: 2.5rem;
+    height: 10rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
+  .white {
+    width: 5rem;
+    height: 18rem;
+  }
+}
+@media (max-width: 560px) {
+  .black {
+    width: 2rem;
+    height: 8rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .white {
+    width: 4rem;
+    height: 16rem;
+  }
+}
